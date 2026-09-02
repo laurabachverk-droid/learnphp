@@ -1,18 +1,22 @@
 <?php
-echo "Hello World!"; // write out "Hello, World" to the browser
-// hello 
-// world
+$test = 10;
+$test = 3.1;
+$test = "Hello World";
+$test = "õpilane";
+$test = "👻";
+$test = "🦖";
+$test = true;
+$test = FALSE;
+$test = null;
+$lol;
+var_dump($test);
+var_dump($lol);
+$test = [1,2, "three", true ];
+var_dump($test);
+$test = new stdClass();
+$test->name = "John";
+var_dump($test);
 
-/**
- * lalaal
- * lalalala
- */
-
-$name = "John Doe"; // variable to store name
-$age = 30; // variable to store age
-echo $age;
-$age = $age * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10; // multiply age by 2, then by 3, then by 4, then by 5, then by 6, then by 7, then by 8, then by 9, then by 10
-echo $age; // output the updated age
-
-echo 2+2; // output the result of 2 + 2
-?>
+$num1 = 1000000000000; //
+$num2 = "1000000000000"; 
+var_dump($num1 === $num2);
