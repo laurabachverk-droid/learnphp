@@ -1,11 +1,11 @@
 <?php
 
 class Box {
-    public $width;
-    public $height;
-    public $length;
-    public $isOpen = false;
-    public $hasbeenOpened = false;
+    public int $width;
+    public int $height;
+    public  $length;
+    public  $isOpen = false;
+    public  $hasbeenOpened = false;
     
     public function  open () {
         $this->isOpen = true;
@@ -22,19 +22,16 @@ class Box {
     }
 }
 
-$box1 = new Box();
-$box1->width = 10;
-$box1->height = 5;
-$box1->length = 8;
-$box1->open();
-var_dump($box1);
-var_dump($box1->Volume());
 
-$box2 = new Box();
-$box2->width = 10;
-$box2->height = 7;
-$box2->length = 5;
-$box2->open();
-var_dump($box2);
-var_dump($box2->Volume());
-var_dump($box1);
+CLASS MetalBox extends Box {
+    public $weight;
+
+    public function mass() {
+        return parent::Volume() * $this->weight;
+
+    }
+}
+
+$metal1 = new MetalBox();
+var_dump($metal1->width);
+var_dump($metal1);
