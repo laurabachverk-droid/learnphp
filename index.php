@@ -1,37 +1,24 @@
 <?php
 
-class Box {
-    public int $width;
-    public int $height;
-    public  $length;
-    public  $isOpen = false;
-    public  $hasbeenOpened = false;
-    
-    public function  open () {
-        $this->isOpen = true;
-        $this->hasbeenOpened = true;    
-    $this->width = $width;
-    }
+class  Cat{
+    use MakeSound;
+}
 
-    public function close() {
-        $this->isOpen = false;
-    }
+class Dog {
+    use HasSmell, MakeSound;
 
-    public function Volume() {
-        return $this->width * $this->height * $this->length;
+}
+
+trait HasSmell {
+    public $smell;
+    public function smell() {
+        return 'Smells like ' . $this->smell;
     }
 }
 
-
-CLASS MetalBox extends Box {
-    public $weight;
-
-    public function mass() {
-        return parent::Volume() * $this->weight;
-
+trait HasSmell {
+    public $smell;
+    public function notes() {
+        return 'Smells like ' . $this->sound. ' sound';
     }
 }
-
-$metal1 = new MetalBox();
-var_dump($metal1->width);
-var_dump($metal1);
