@@ -1,4 +1,3 @@
-         <?php /** @var array $posts */ ?>
          <h3 class="pb-4 mb-4 fst-italic border-bottom">From the Firehose</h3>
           <?php foreach($posts as $post): ?>
             <article class="blog-post">

@@ -33,7 +33,7 @@ class PublicController
                 'author' => 'Manivald',
             ],
         ];
-        \view('index', compact('title', 'posts'));
+        view('index', compact('title', 'posts'));
     }
 
     public function us()
@@ -65,10 +65,15 @@ class PublicController
                 'author' => 'Manivald',
             ],
         ];
-        \view('us', compact('title', 'posts'));
+        view('us', compact('title', 'posts'));
     }
     
     public function forms() {
-        \view('forms');
+        view('forms');
+    }
+
+    public function answer() {
+        dump($_GET);
+        dump($_POST);
     }
 }
