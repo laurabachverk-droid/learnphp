@@ -3,7 +3,7 @@
 <!-- Tailwind CSS is used only for the button exercise on this page.
      Disable Preflight so it does not reset the existing Bootstrap styles. -->
 <script>
-  tailwind = { config: { corePlugins: { preflight: false } } };
+  tailwind.config = { corePlugins: { preflight: false } };
 </script>
 <script src="https://cdn.tailwindcss.com"></script>
 
